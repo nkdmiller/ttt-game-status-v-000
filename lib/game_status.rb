@@ -57,12 +57,16 @@ def over?(board)
 end
 
 def winner(board)
-  winner_moves = won?(board)
-  puts winner_moves
-  if X_winner(winner_moves) == true
+  winner_chars = []
+  winner_index = won?(board)
+  winner_index.each do |index|
+    winner_chars << board[index]
+  puts winner_chars
+
+  if X_winner(winner_chars) == true
     puts "X"
     return "X"
-  elsif O_winner(winner_moves) == true
+  elsif O_winner(winner_chars) == true
     puts "O"
     return "O"
   else
@@ -71,13 +75,13 @@ def winner(board)
   end
 end
 
-def X_winner(winner_moves)
+def X_winner(winner_chars)
   winner_moves.all? do |position|
     position == "X"
   end
 end
 
-def O_winner(winner_moves)
+def O_winner(winner_chars)
   winner_moves.all? do |position|
     position == "O"
   end
