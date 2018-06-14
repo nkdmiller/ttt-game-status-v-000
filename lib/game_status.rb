@@ -77,13 +77,13 @@ def winner(board)
 end
 
 def X_winner(winner_chars)
-  winner_moves.all? do |position|
+  winner_chars.all? do |position|
     position == "X"
   end
 end
 
 def O_winner(winner_chars)
-  winner_moves.all? do |position|
+  winner_chars.all? do |position|
     position == "O"
   end
 end
