@@ -62,7 +62,6 @@ def winner(board)
   winner_index.each do |index|
     winner_chars << board[index]
   end
-  puts winner_chars
 
   if X_winner(winner_chars) == true
     puts "X"
@@ -70,9 +69,6 @@ def winner(board)
   elsif O_winner(winner_chars) == true
     puts "O"
     return "O"
-  else
-    puts "nil"
-    return nil
   end
 end
 
