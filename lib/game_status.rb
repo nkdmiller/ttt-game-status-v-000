@@ -58,11 +58,12 @@ end
 
 def winner(board)
   winner_moves = won?(board)
-  winner_moves.all? do |position|
-    position == "X"
-  end
-  winner_moves.all? do |position|
-    position == "O"
+  if X_winner(winner_moves)
+    return "X"
+  elsif O_winner(winner_moves)
+    return "O"
+  else
+    return nil
   end
 end
 
@@ -76,6 +77,6 @@ def O_winner(winner_moves)
   winner_moves.all? do |position|
     position == "O"
   end
-end  
+end
 
   
