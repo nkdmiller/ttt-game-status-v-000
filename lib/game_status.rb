@@ -31,9 +31,11 @@ def won?(board)
   end
 end
 
-won?(board)
-#def full?
-
+def full?(board)
+  board.all? do |position|
+    position == "X" || position == "O"
+  end
+end
 #end
 
 #def draw?
