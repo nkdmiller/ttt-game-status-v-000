@@ -57,10 +57,11 @@ def over?(board)
 end
 
 def winner(board)
-  board.all? do |position|
+  winner_moves = won?(board)
+  winner_moves.all? do |position|
     position == "X"
   end
-  board.all? do |position|
+  winner_moves.all? do |position|
     position == "O"
   end
 end
