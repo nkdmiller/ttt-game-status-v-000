@@ -61,6 +61,7 @@ def winner(board)
   winner_index = won?(board)
   winner_index.each do |index|
     winner_chars << board[index]
+  end
   puts winner_chars
 
   if X_winner(winner_chars) == true
