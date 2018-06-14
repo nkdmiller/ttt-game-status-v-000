@@ -59,6 +59,7 @@ end
 def winner(board)
   winner_moves = won?(board)
   if X_winner(winner_moves)
+    puts "X"
     return "X"
   elsif O_winner(winner_moves)
     return "O"
@@ -78,3 +79,6 @@ def O_winner(winner_moves)
     position == "O"
   end
 end
+
+board = ["X", " ", " ", " ", "X", " ", " ", " ", "X"]
+winner(board)
