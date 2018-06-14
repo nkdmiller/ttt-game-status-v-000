@@ -26,8 +26,8 @@ def won?(board)
     position_3 = board[win_index_3]
 
     if position_1 == "X" && position_2 == "X" && position_3 == "X"
-      puts [position_1, position_2, position_3]
-      return [position_1, position_2, position_3]
+      puts [win_array[0], win_array[1], win_array[2]]
+      return true
     end
   end
 end
