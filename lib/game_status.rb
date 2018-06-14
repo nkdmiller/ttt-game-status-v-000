@@ -58,6 +58,9 @@ end
 
 def winner(board)
   winner_chars = []
+  if won?(board) == false
+    return nil
+  end
   winner_index = won?(board)
   winner_index.each do |index|
     winner_chars << board[index]
