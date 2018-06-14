@@ -32,6 +32,7 @@ def won?(board)
   end
 end
 
+won?(board)
 #def full?
 
 #end
