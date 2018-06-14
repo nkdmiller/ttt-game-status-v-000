@@ -65,3 +65,17 @@ def winner(board)
     position == "O"
   end
 end
+
+def X_winner(winner_moves)
+  winner_moves.all? do |position|
+    position == "X"
+  end
+end
+
+def O_winner(winner_moves)
+  winner_moves.all? do |position|
+    position == "O"
+  end
+end  
+
+  
