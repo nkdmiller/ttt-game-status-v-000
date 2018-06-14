@@ -57,6 +57,8 @@ end
 def winner(board)
   board.all? do |position|
     position == "X"
+  end
   board.all? do |position|
     position == "O"
+  end
 end
