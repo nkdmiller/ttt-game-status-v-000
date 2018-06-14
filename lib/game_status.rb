@@ -29,6 +29,7 @@ def won?(board)
       return win_array
     end
   end
+  return false
 end
 
 def full?(board)
@@ -36,11 +37,11 @@ def full?(board)
     position == "X" || position == "O"
   end
 end
-#end
 
-#def draw?
+def draw?(board)
+  if full?(board) &&
 
-#end
+
 
 #def over?
 
