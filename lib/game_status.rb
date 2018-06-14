@@ -78,5 +78,3 @@ def O_winner(winner_moves)
     position == "O"
   end
 end
-
-  
