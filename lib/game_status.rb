@@ -27,7 +27,7 @@ def won?(board)
 
     if position_1 == "X" && position_2 == "X" && position_3 == "X"
       puts [position_1, position_2, position_3]
-      return [position_1, position_2, position_3]
+      return win_array
     end
   end
 end
