@@ -29,7 +29,7 @@ def won?(board)
       return win_array
     end
   end
-  return false
+  return "Oh hi, Mark"
 end
 
 def full?(board)
