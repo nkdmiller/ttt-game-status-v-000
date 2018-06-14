@@ -62,8 +62,10 @@ def winner(board)
     puts "X"
     return "X"
   elsif O_winner(winner_moves)
+    puts "O"
     return "O"
   else
+    puts "nil"
     return nil
   end
 end
