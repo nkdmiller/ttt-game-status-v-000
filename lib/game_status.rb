@@ -28,7 +28,7 @@ def won?(board)
       return win_array
     end
     if position_1 == "O" && position_2 == "O" && position_3 == "O"
-      return win_array    
+      return win_array
   end
   return false
 end
