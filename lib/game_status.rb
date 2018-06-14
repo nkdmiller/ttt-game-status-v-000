@@ -39,14 +39,24 @@ def full?(board)
 end
 
 def draw?(board)
-  if full?(board) &&
+  if full?(board) && !(won?(board))
+    return true
+  else
+    return false
+  end
+end
 
+def over?(board)
+  if won?(board) != false || full?(board)
+    return true
+  else
+    return false
+  end
+end
 
-
-#def over?
-
-#end
-
-#def winner
-
-#end
+def winner(board)
+  board.all? do |position|
+    position == "X"
+  board.all? do |position|
+    position == "O"
+end
