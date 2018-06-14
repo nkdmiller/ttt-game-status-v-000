@@ -32,18 +32,18 @@ def won?(board)
   end
 end
 
-def full?
+#def full?
 
-end
+#end
 
-def draw?
+#def draw?
 
-end
+#end
 
-def over?
+#def over?
 
-end
+#end
 
-def winner
+#def winner
 
-end
+#end
