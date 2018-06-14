@@ -58,6 +58,7 @@ end
 
 def winner(board)
   winner_moves = won?(board)
+  puts winner_moves
   if X_winner(winner_moves) == true
     puts "X"
     return "X"
