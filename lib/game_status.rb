@@ -14,7 +14,6 @@ WIN_COMBINATIONS = [
   [2,4,6]
 ]
 
-board = ["X", "X", "X", "O", "O", " ", " ", " ", " "]
 def won?(board)
   WIN_COMBINATIONS.each do |win_array|
     win_index_1 = win_array[0]
@@ -29,7 +28,7 @@ def won?(board)
       return win_array
     end
   end
-  return "Oh hi, Mark"
+  return false
 end
 
 def full?(board)
